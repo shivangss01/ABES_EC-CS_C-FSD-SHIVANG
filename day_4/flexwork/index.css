@@ -13,7 +13,9 @@
     height: 250px;
     background-color: antiquewhite;
 }
-
+.box:hover{
+    cursor: pointer;
+}
 .box:nth-child(1) {
     background-color: cadetblue;
     display: flex;
@@ -38,17 +40,25 @@
     flex-direction: row;
 }
 
-.box:nth-child(1) > div,
-.box:nth-child(3)> div {
+.box:nth-child(1)>div,
+.box:nth-child(3)>div {
     width: auto;
     height: 50%;
 }
-.box:nth-child(2) > div,
-.box:nth-child(4)> div {
+
+.box:nth-child(2)>div,
+.box:nth-child(4)>div {
     width: 50%;
     height: 150px;
 }
-img{
-   height:100px;
-   width:130px;
+
+.box:nth-child(1)>div>img,
+.box:nth-child(3)>div>img {
+    height: 100px;
+    width: 130px;
+}
+.box:nth-child(2)>div>img,
+.box:nth-child(4)>div>img {
+    height:70px ;
+    width:70px ;
 }
